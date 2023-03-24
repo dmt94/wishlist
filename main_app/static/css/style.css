@@ -1,0 +1,54 @@
+
+body {
+  text-align: center;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main-div {
+  width: 100%;
+}
+
+table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+tr th {
+  border:1px solid black;
+  padding: 2vmin;
+}
+
+.delete-link {
+  color: red;
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+.add-item {
+  background-color: rgb(220, 217, 217);
+  padding: 2vmin;
+  margin-top: 4vmin;
+}
+
+hr {
+  margin: 4vmin auto;
+  width: 90%;
+}
+
+.add-item:hover {
+  background-color: rgb(70, 70, 67);
+  color: white;
+}
