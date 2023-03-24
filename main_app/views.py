@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Item
 from django.views.generic.edit import CreateView, DeleteView
+from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
 def wish_index(request):
