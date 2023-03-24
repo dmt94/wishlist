@@ -43,12 +43,19 @@ a {
   margin-top: 4vmin;
 }
 
-hr {
-  margin: 4vmin auto;
-  width: 90%;
-}
-
 .add-item:hover {
   background-color: rgb(70, 70, 67);
   color: white;
+}
+
+.confirm-btn {
+  background-color: red;
+  color: white;
+  padding: 2vmin;
+  margin: 2vmin;
+}
+
+hr {
+  margin: 4vmin auto;
+  width: 90%;
 }

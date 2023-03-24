@@ -23,7 +23,7 @@
 {% for item in item_list.all %}
   <tr>
     <td>{{ item.name }}</td>
-    <td><a class="delete-link" href="">X</a></td>
+    <td><a class="delete-link" href="{% url 'item_delete' item.id %}">X</a></td>
   </tr>
 {% endfor %}
 </table>
