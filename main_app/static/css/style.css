@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 
 body {
   text-align: center;
@@ -5,10 +6,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Quicksand', sans-serif;
 }
 
 h1 {
   text-align: center;
+}
+
+.header-emojis {
+  font-size: 8vmin;
+  margin: 2vmin;
 }
 
 .main-div {
@@ -23,14 +30,60 @@ table {
   flex-direction: column;
 }
 
-tr th {
-  /* border:1px solid black; */
+tr th,
+tr td {
   padding: 2vmin;
+  border: 1px solid black;
+}
+
+tr th {
+  background-color: rgb(88, 141, 78);
+  color: white;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border: none;
+}
+
+textarea {
+  margin: 2vmin;
+  background-color: rgb(227, 251, 203);
+  color: black;
+  padding: 1vmin;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 100px;
+}
+
+tr td {
+  background-color: rgba(239, 222, 222, 0.308);
+  max-width: 200px;
+  border: none;
+  box-shadow: rgba(69, 69, 91, 0.498) 0px 2px 5px -1px, rgba(126, 125, 125, 0.145) 0px 1px 3px -1px;
+}
+
+#add-item-form tr td {
+  max-width: fit-content;
+  background-color: rgba(21, 21, 21, 0);
+}
+
+#add-item-form tr th {
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 0;
 }
 
 .delete-link {
   color: red;
   font-weight: 800;
+  font-size: 7vmin;
+}
+
+.delete-link:hover {
+  opacity: 0.3;
+}
+
+.delete-description {
+  color: rgb(231, 91, 91);
 }
 
 a {
@@ -38,15 +91,18 @@ a {
   color: black
 }
 
-.add-item {
-  background-color: rgb(220, 217, 217);
+.add-item,
+form input.add-item {
+  background-color: rgb(244, 186, 184);
   padding: 2vmin;
   margin-top: 4vmin;
+  border: none;
 }
 
 .add-item:hover {
   background-color: rgb(70, 70, 67);
   color: white;
+  cursor: pointer;
 }
 
 .confirm-btn {
@@ -54,6 +110,16 @@ a {
   color: white;
   padding: 2vmin;
   margin: 2vmin;
+  border: none;
+}
+
+.confirm-btn:hover {
+  background-color: lightcoral;
+  cursor: pointer;
+}
+
+#cancel-btn:hover {
+  text-decoration: underline;
 }
 
 hr {

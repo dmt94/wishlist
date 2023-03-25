@@ -2,24 +2,16 @@
 {% block content %}
 
 <div class="main-div">
+  <h4 class="header-emojis">🌼🌸🌺🌻</h4>
   <h1>Wish List Items</h1>
 
-<table>
-  <!-- <thead>
-    <tr>
-      <th>Description</th>
-      <th>Delete</th>
-    </tr>
-  </thead> -->
-</table>
+
 {% if item_list %}
 <table>
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Delete</th>
-    </tr>
-  </thead>
+  <tr>
+    <th>Description</th>
+    <th>Delete</th>
+  </tr>
 {% for item in item_list.all %}
   <tr>
     <td>{{ item.description }}</td>
